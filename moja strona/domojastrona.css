@@ -1,0 +1,56 @@
+/*.submenu li {*/
+    /*background-color: brown;*/
+    /*color: azure;*/
+    /*padding: 20px;*/
+    /*max-width: 130px;*/
+    /*text-align: center;*/
+/*}*/
+/*.submenu {*/
+    /*display: none;*/
+/*}*/
+/*.mainMenu li:hover ul {*/
+    /*display: block;*/
+/*}*/
+
+/*.mainMenu > li {*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*min-width: 130px;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+    /*background-color:cornflowerblue;*/
+    /*font-size: 17px;*/
+    /*font-family: Arial;*/
+    /*font-weight: bold;*/
+    /*color: white;*/
+/*}*/
+
+
+.Button1 li {
+    min-width: 100px;
+    max-width: 150px;
+    background-color: cornflowerblue;
+    color: aqua;
+    text-align: center;
+    padding: 20px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.Podbutton  {
+    margin-top: 20px;
+}
+.Podbutton li {
+    min-width: 100px;
+    max-width: 150px;
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 20px 5px;
+    margin-top: 2px;
+}
+.Podbutton {
+    display: none;
+}
+.Button1 li:hover ul {
+    display: block;
+}
