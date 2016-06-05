@@ -188,3 +188,17 @@ function oddnumbers(){
 //}
 //
 //szukanieksywy(listalista);
+
+//var a = 1;
+//for ( var i = 0 ; a < 10 ; i++ ) {
+//    if (i % 2 !== 0) {
+//        a++;
+//    }
+//
+//    console.log('i:', i, 'a:', a);
+//}
+//setTimeout(function () {
+//    console.log('paf!');
+//}, 1000);
+//console.log('pif!');
+
