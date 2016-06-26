@@ -353,37 +353,36 @@
 //     }
 // });
 //
-
-var hotel = {
-    name: "Ajax",
-    rooms: 40,
-    booked: 25,
-    dostepnosc: function () {
-        return this.rooms - this.booked;
-    }
-};
-
-
-var hotel = new Object();
-console.log(hotel);
-delete hotel.name;
-hotel.rooms = 60;
-hotel.booked = 80;
-hotel.gym = 20;
-hotel.dostepnosc = function () {
-    return this.rooms - this.booked;
-}
-
-
-function hotele(name, rooms, booked){
-    this.name = name;
-    this.rooms = rooms;
-    this.booked = booked;
-    this.dostepnosc = function() {
-        return this.rooms - this.booked;
-    };
-}
-
+//
+// var hotel = {
+//     name: "Ajax",
+//     rooms: 40,
+//     booked: 25,
+//     dostepnosc: function () {
+//         return this.rooms - this.booked;
+//     }
+// };
+//
+//
+// var hotel = new Object();
+// console.log(hotel);
+// delete hotel.name;
+// hotel.rooms = 60;
+// hotel.booked = 80;
+// hotel.gym = 20;
+// hotel.dostepnosc = function () {
+//     return this.rooms - this.booked;
+// }
+//
+//
+// function hotele(name, rooms, booked) {
+//     this.name = name;
+//     this.rooms = rooms;
+//     this.booked = booked;
+//     this.dostepnosc = function () {
+//         return this.rooms - this.booked;
+//     };
+// }
 
 
 //
@@ -407,3 +406,89 @@ function hotele(name, rooms, booked){
 //     }
 // };
 //
+// function titleCase(title, minorWords) {
+//     if (title.length === 0) {
+//         return '';
+//     }
+//
+//     title = title.toLowerCase();
+//
+//     if (minorWords !== undefined && minorWords.length > 0) {
+//         minorWords = minorWords.toLowerCase();
+//         minorWords = minorWords.split(" ");
+//     } else {
+//         minorWords = [];
+//     }
+//
+//     var tablica = [];
+//     var arrayTitles = title.split(" ");
+//     arrayTitles.forEach(function (item, index) {
+//         if (minorWords.indexOf(item) === -1 || index === 0) {
+//             item = item[0].toUpperCase() + item.substring(1);
+//         }
+//         tablica.push(item);
+//     });
+//     var result = tablica.join(" ");
+//     return result;
+// }
+//
+//
+// console.log(titleCase('') === '');
+// console.log(titleCase('', '') === '');
+// console.log(titleCase('a clash of KINGS', 'a an the of') === 'A Clash of Kings');
+// console.log(titleCase('THE WIND IN THE WILLOWS', 'The In') === 'The Wind in the Willows');
+// console.log(titleCase('the quick brown fox') === 'The Quick Brown Fox');
+//
+// function derDieDas(wort) {
+//     wort = wort.toLowerCase();
+//     var count = 0;
+//     for (var i = 0; i < wort.length; i++) {
+//         if (wort[i] === 'a' || wort[i] === 'e' || wort[i] === 'i' || wort[i] === 'o' || wort[i] === 'u' || wort[i] === 'ä' || wort[i] === 'ö' || wort[i] === 'ü') {
+//             count = count + 1;
+//         }
+//     }
+//     if( count <2){
+//         return "das" + " " + wort;
+//     }
+//     else if( count > 3 ){
+//         return "der" + " " + wort;
+//
+//     }else{
+//         return 'die' + " " + wort;
+//     }
+//
+// }
+// console.log(derDieDas('Jürgen'), 'die Jürgen', '1 Umlaut, 1 Vokal -> die Jürgen');
+// console.log(derDieDas('Auto'), 'die Auto', '3 Vokale -> die Auto');
+// console.log(derDieDas('Lappen'), 'die Lappen', '2 Vokale -> die Lappen');
+// console.log(derDieDas('Donau-Dampfschifffahrtsgesellschaft'), 'der Donau-Dampfschifffahrtsgesellschaft', '9 Vokale -> der Donau-Dampfschifffahrtsgesellschaft');
+// console.log(derDieDas('Ei'), 'die Ei', '2 Vokale -> die Ei');
+// console.log(derDieDas('Hut'), 'das Hut', '1 Vokal -> das Hut');
+
+function changeMe(moneyIn) {
+    var newchange = moneyIn;
+console.log(newchange.split('£'));
+    newchange[1]=newchange[1]*100;
+    console.log(newchange[1]);
+
+    if (moneyIn !== '£5' || moneyIn !== '£2' || moneyIn !== '£1' || moneyIn !== '50p' || moneyIn !== '20p'
+    ) {
+         moneyIn;
+    }
+
+    if (newchange % 20 === 0) {
+        for(var i=0; i<=(newchange/20); i++){
+
+        }
+
+    }
+
+    if (newchange % 20 === 10) {
+
+    }
+
+
+}
+
+console.log(changeMe("£1"), "20p 20p 20p 20p 20p");
+console.log(changeMe("Money"), "Money");

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap/bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div ng-controller="myCtrl" class="Screen col-lg-12 col-md-12">-->
+    <!--{{fail}}-->
+    <!--<div ng-repeat="item in response">-->
+        <!--<div>{{item.id}}</div>-->
+        <!--<div>{{item.title}}</div>-->
+        <!--<div>{{item.body}}</div>-->
+    <!--</div>-->
+
+    <div ng-controller="DataController" class="Screen col-lg-12 col-md-12">
+     <div ng-show="fail">
+         Sorrry masz Pan pan problem
+     </div>
+        <div ng-repeat="item in data">
+            <div>{{item.id}}</div>
+            <div>{{item.title}}</div>
+            <div>{{item.body}}</div>
+        </div>
+    <!--<ng-include src="'directive_formula/my_formula.html'"></ng-include>-->
+    <!--<ng-include src="'ajax.html'"></ng-include>-->
+
+
+
+</div>
+<!--SCRIPT-->
+<script type="text/javascript" src="libs/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap.js"></script>
+<script type="text/javascript" src="libs/angular.min.js"></script>
+<script type="text/javascript" src="libs/jquery.sortable.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!--<script type="text/javascript" src="directive_formula/my_formula.js"></script>-->
+<!--<script type="text/javascript" src="PostsController.js"></script>-->
+<!--<script type="text/javascript" src="PostsService.js"></script>-->
+<script type="text/javascript" src="directive_formula/ajaxProba.js"></script>
+<script type="text/javascript" src="directive_formula/ajaxowaProba.js"></script>
+<script type="text/javascript" src="directive_formula/dataService.js"></script>
+</body>
+</html>

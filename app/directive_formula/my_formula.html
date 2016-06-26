@@ -1,0 +1,46 @@
+<div ng-controller="ProductController">
+    <div class="information col-lg-6 col-md-6">
+
+        <div class="form-group has-success ">
+            <label class="control-label" for="product">Podaj nazwe produktu</label>
+            <input type="text" class="form-control" id="product" ng-model="product">
+        </div>
+        <div class="form-group ">
+            <label class="control-label" for="price">Produkt</label>
+            <input type="number" class="form-control" id="price" ng-model="price">
+        </div>
+        <input type="button" value="Dodaj" ng-click="add()">
+        <div class="has-warning">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="checkboxWarning" value="option1">
+                    Checkbox with warning
+                </label>
+            </div>
+        </div>
+        <div class="has-error">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="checkboxError" value="option1">
+                    Checkbox with error
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="count col-lg-6 col-md-6">
+        <table class="table table-hover ">
+
+            <tr>
+                <td>Nazwa produktu</td>
+                <td> Cena produktu</td>
+                <td>Usuń</td>
+            </tr>
+            <tr ng-repeat="item in products">
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <!--<td>{{usun}}</td>-->
+
+            </tr>
+        </table>
+    </div>
+</div>
